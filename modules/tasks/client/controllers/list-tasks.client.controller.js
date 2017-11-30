@@ -1,15 +1,15 @@
-(function () {
-  'use strict';
+(function() {
+    'use strict';
 
-  angular
-    .module('tasks')
-    .controller('TasksListController', TasksListController);
+    angular
+        .module('tasks')
+        .controller('TasksListController', TasksListController);
 
-  TasksListController.$inject = ['TasksService'];
+    TasksListController.$inject = ['TasksService'];
 
-  function TasksListController(TasksService) {
-    var vm = this;
+    function TasksListController(TasksService) {
+        var vm = this;
 
-    vm.tasks = TasksService.query();
-  }
+        vm.tasks = TasksService.query();
+    }
 }());

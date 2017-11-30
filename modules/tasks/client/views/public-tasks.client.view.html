@@ -3,9 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <a class="btn btn-primary btn-lg btn-block" ui-sref="tasks.public">
-          View Public Tasks
-        </a>
+                <a class="btn btn-primary btn-lg btn-block" ui-sref="tasks.list">View Private Tasks</a>
             </div>
             <div class="col-md-6">
                 <a class="btn btn-primary btn-lg btn-block" ui-sref="tasks.create">
@@ -15,7 +13,7 @@
         </div>
     </div>
     <div class="page-header">
-        <h1 class="text-center">My Tasks</h1>
+        <h1 class="text-center">Public Tasks</h1>
     </div>
     <ul class="list-group">
         <a ng-repeat="task in vm.tasks" ui-sref="tasks.view({ taskId: task._id })" class="list-group-item">
