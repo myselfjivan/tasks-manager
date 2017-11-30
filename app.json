@@ -1,0 +1,22 @@
+{
+    "name": "app",
+    "description": "Starter App",
+    "repository": "https://myselfjivan@bitbucket.org/penpenny/meanjs-custom-starter-app.git",
+    "logo": "https://penpenny.com/icon.png",
+    "keywords": [
+        "app"
+    ],
+    "addons": [{
+            "plan": "mongolab:sandbox"
+        },
+        {
+            "plan": "papertrail:choklad"
+        }
+    ],
+    "env": {
+        "NPM_CONFIG_PRODUCTION": "true",
+        "NPM_CONFIG_LOGLEVEL": "error",
+        "NODE_ENV": "production",
+        "NODE_VERBOSE": "false"
+    }
+}
